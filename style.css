@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(red,transparent),
+    linear-gradient(to top left,lime,transparent),
+    linear-gradient(to top right,blue,transparent);
+    background-blend-mode: screen;
+    padding: 50px;
+    border-radius: 5px;
+}
+ul li{
+    list-style: none;
+    float: left;
+    background: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 50px;
+    animation: animate 1s infinite alternate;
+    -webkit-perspective: 500px;
+}
+@keyframes animate {
+    from
+    {
+        transform: scale(1) translateY(0) rotateX(0deg);
+        box-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+    to
+    {
+        transform: scale(1.35) translateY(-25px) rotateX(45deg);
+        box-shadow: 0 30px 5px rgba(0,0,0,.2);
+    }
+}
+ul li:nth-child(1)
+{
+    animation-delay: .1s;
+}
+ul li:nth-child(2)
+{
+    animation-delay: .2s;
+}
+ul li:nth-child(3)
+{
+    animation-delay: .3s;
+}
+ul li:nth-child(4)
+{
+    animation-delay: .4s;
+}
+ul li:nth-child(5)
+{
+    animation-delay: .5s;
+}
+ul li:nth-child(6)
+{
+    animation-delay: .6s;
+}
+ul li:nth-child(7)
+{
+    animation-delay: .7s;
+}
